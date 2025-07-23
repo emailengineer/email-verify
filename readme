@@ -1,0 +1,5 @@
+bash <(curl -s https://raw.githubusercontent.com/emailengineer/email-verify/main/install.sh)
+
+curl -X POST http://your-vps-ip:8080/verify \
+     -H "Content-Type: application/json" \
+     -d '{"email":"test@example.com"}'
